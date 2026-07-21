@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P'tite Chipie — Savons surgras suisses, saponifiés à froid</title>
+<meta name="description" content="Savons surgras artisanaux, saponifiés à froid en Suisse. Sans huile de palme, sans parfum de synthèse. Fabriqué à la main dans notre atelier genevois.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="atelier-rail"><span>Saponification à froid — Genève — Depuis 2014</span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-top">
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.jpg" alt="P'tite Chipie — savon artisanal">
+    </a>
+
+    <div class="header-search">
+      <input type="text" placeholder="Rechercher un savon, un accessoire…">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </div>
+
+    <div class="header-actions">
+      <div class="lang-select">
+        <button type="button"><span class="lang-current">FR</span>
+          <svg width="9" height="6" viewBox="0 0 9 6" fill="none"><path d="M1 1L4.5 4.5L8 1" stroke="currentColor" stroke-width="1.3"/></svg>
+        </button>
+        <ul>
+          <li><a href="#">FR</a></li>
+          <li><a href="#">EN</a></li>
+          <li><a href="#">DE</a></li>
+        </ul>
+      </div>
+      <button class="icon-btn" aria-label="Mon compte">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Liste de souhaits">
+        <svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.5-9.5-9C1 7.5 3 4 6.5 4c2 0 3.5 1.2 4.5 2.6C12 5.2 13.5 4 15.5 4 19 4 21 7.5 20.5 11 18.5 15.5 12 20 12 20z"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Panier">
+        <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li class="has-dropdown">
+        <a href="#">Boutique en ligne</a>
+        <div class="dropdown">
+          <a href="#">Les savons</a>
+          <a href="#">Les accessoires</a>
+          <a href="#">Natur'Mel</a>
+          <a href="#">Coffrets &amp; bons cadeaux</a>
+        </div>
+      </li>
+      <li><a href="#">Mon compte</a></li>
+      <li><a href="#" style="text-transform:none;font-family:var(--sans);color:var(--ink-45)">Livraison offerte dès CHF 85.–</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============ HERO SLIDER ============ -->
+<section class="hero">
+  <div class="hero-slide active">
+    <img src="assets/banner_left.jpg" alt="Savon surgras artisanal en forme de flocon">
+  </div>
+  <div class="hero-slide">
+    <img src="assets/banner_right.jpg" alt="Savon surgras artisanal au miel">
+  </div>
+
+  <div class="hero-content">
+    <span class="eyebrow">Savonnerie artisanale — Suisse</span>
+    <h1>Le savon,<br><span class="italic">façonné à la main.</span></h1>
+    <div class="hero-cta">
+      <a href="#collection" class="btn btn-light">Découvrir la boutique</a>
+      <a href="#philosophie" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.6)">Notre philosophie</a>
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <button class="active" aria-label="Slide 1"></button>
+    <button aria-label="Slide 2"></button>
+  </div>
+
+  <div class="hero-arrows">
+    <button class="hero-arrow prev" aria-label="Précédent">
+      <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="hero-arrow next" aria-label="Suivant">
+      <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ============ CATEGORY GRID ============ -->
+<section class="section" id="collection">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">La collection</span>
+        <h2>Ce que façonne<br>notre atelier.</h2>
+      </div>
+      <p style="max-width:34ch;color:var(--ink-70);font-size:14.5px;">Six univers, une seule exigence&nbsp;: des matières premières honnêtes, travaillées à froid, sans artifice.</p>
+    </div>
+
+    <div class="cat-grid">
+      <a class="cat-card" href="#">
+        <img src="assets/banner_left.jpg" alt="Porte-savons en bois">
+        <div class="cat-card-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></div>
+        <div class="cat-card-body">
+          <span class="eyebrow">Accessoires</span>
+          <h3>Les porte-savons</h3>
+          <p>En bois massif, pour préserver la vie de chaque savonnette.</p>
+        </div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <img src="assets/banner_right.jpg" alt="Savons surgras artisanaux">
+        <div class="cat-card-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></div>
+        <div class="cat-card-body">
+          <span class="eyebrow">Signature</span>
+          <h3>Les savons</h3>
+          <p>Saponifiés à froid, riches en glycérine naturelle.</p>
+        </div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <img src="assets/banner_full.jpg" alt="Accessoires de rasage et de bain">
+        <div class="cat-card-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></div>
+        <div class="cat-card-body">
+          <span class="eyebrow">Rituel</span>
+          <h3>Les accessoires</h3>
+          <p>Rasoirs, porte-savons magnétiques et essentiels de salle de bain.</p>
+        </div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <img src="assets/banner_left.jpg" alt="Coffrets cadeaux">
+        <div class="cat-card-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></div>
+        <div class="cat-card-body">
+          <span class="eyebrow">À offrir</span>
+          <h3>Coffrets &amp; bons cadeaux</h3>
+          <p>Des compositions pensées pour faire plaisir, sans superflu.</p>
+        </div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <img src="assets/banner_right.jpg" alt="Promotions">
+        <div class="cat-card-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></div>
+        <div class="cat-card-body">
+          <span class="eyebrow">Édition limitée</span>
+          <h3>Les promotions</h3>
+          <p>Fins de série et petites quantités, en quantité limitée.</p>
+        </div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <img src="assets/banner_full.jpg" alt="Shampoings solides Natur'Mel">
+        <div class="cat-card-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></div>
+        <div class="cat-card-body">
+          <span class="eyebrow">Natur'Mel</span>
+          <h3>Les shampoings</h3>
+          <p>Solides, concentrés, pensés pour cheveux et cuir chevelu.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / EDITORIAL ============ -->
+<section class="section" id="philosophie" style="background:var(--stone);">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-media">
+        <img src="assets/banner_left.jpg" alt="Atelier de fabrication de savons P'tite Chipie">
+        <span class="tag">L'atelier — Genève</span>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">Notre philosophie</span>
+        <h2 style="margin:14px 0 26px;font-size:clamp(26px,3vw,38px);">Ma vision de la<br>beauté responsable.</h2>
+
+        <p>Depuis toujours, j'accorde une grande importance à mon cadre de vie, que ce soit à travers ma relation avec la nature, mon interaction avec l'environnement, ou les produits que j'utilise et consomme quotidiennement. Si la mondialisation a permis à de nombreux pays de se développer et de nous offrir une multitude de produits et services, cela n'a pas été sans conséquences. Ces transformations ont eu un impact majeur sur notre planète. Pour y remédier, je crois qu'il est essentiel de revenir à des principes fondamentaux&nbsp;: adopter des gestes responsables et privilégier les produits naturels, de saison et locaux.</p>
+
+        <p>Il y a un peu plus d'une décennie, j'ai pris conscience que les cosmétiques que j'utilisais au quotidien contenaient des ingrédients nocifs&nbsp;: des graisses de mauvaise qualité, des perturbateurs endocriniens, des conservateurs et des dérivés de la pétrochimie. Dans cette optique, j'ai commencé à chercher des alternatives.</p>
+
+        <blockquote class="pull-quote">« Après de nombreuses recherches, lectures et essais, j'ai finalement élaboré mes premiers savons en 2014. »</blockquote>
+
+        <details>
+          <summary>Lire la suite</summary>
+          <p>Ce qui n'était au départ qu'un test pour mon usage personnel est rapidement devenu un cadeau pour mes proches, puis un produit répondant pleinement à mes exigences. En 2015, j'ai décidé de participer aux marchés locaux afin d'échanger avec vous, de recueillir vos idées et de mieux comprendre vos besoins. Cette même année, mes savons ont été distribués dans plusieurs commerces partenaires, et j'ai également lancé ce site internet.</p>
+          <p>Les lois sur les cosmétiques ont évolué au fil des ans, renforçant les exigences de sécurité et de transparence pour les consommateurs. Consciente de l'importance de ces nouvelles réglementations, je m'assure que chaque produit que je crée respecte scrupuleusement ces normes. Tous les Dossiers d'Information Produit (DIP) sont disponibles pour chaque recette, garantissant ainsi un accès total aux informations sur la composition, la sécurité et l'éthique de chaque formule.</p>
+          <p>Tous mes produits sont conçus dans mon atelier, un espace entièrement dédié à la création artisanale de cosmétiques naturels. Ce lieu est bien plus qu'un simple espace de fabrication&nbsp;: c'est là où chaque ingrédient est sélectionné avec soin, où chaque formule est testée pour sa qualité et son efficacité, et où chaque produit est préparé avec la plus grande attention.</p>
+          <p>Je vous souhaite beaucoup de plaisir dans la découverte de mon univers et de mes produits, et j'espère qu'ils sauront répondre à vos attentes en matière de naturel, de qualité et de transparence.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="certs">
+  <div class="cert">
+    <svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.4L12 15.8 7.1 18l.9-5.4-4-3.9L9.5 8z"/></svg>
+    <span>Certifié Bio</span>
+  </div>
+  <div class="cert">
+    <svg viewBox="0 0 24 24"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 4.5-4 8-8 11z"/></svg>
+    <span>Fait main</span>
+  </div>
+  <div class="cert">
+    <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M9 12l2 2 4-4"/></svg>
+    <span>Qualité suisse</span>
+  </div>
+  <div class="cert">
+    <svg viewBox="0 0 24 24"><path d="M12 2C7 6 4 9 4 14a8 8 0 0 0 16 0c0-5-3-8-8-12z"/></svg>
+    <span>Éco-responsable</span>
+  </div>
+</section>
+
+<!-- ============ FEATURED PRODUCTS ============ -->
+<section class="section" id="produits">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Nos essentiels</span>
+        <h2>Les savons<br>les plus choisis.</h2>
+      </div>
+      <a href="#" class="btn btn-outline">Voir toute la boutique</a>
+    </div>
+
+    <div class="product-grid">
+      <a class="product-card" href="produit.html">
+        <div class="product-media">
+          <span class="product-badge">Sans parfum</span>
+          <img src="assets/banner_left.jpg" alt="Savon Alep d'Ici 40%">
+          <div class="product-quickadd">Aperçu rapide</div>
+        </div>
+        <h3 class="product-title">Savon Alep d'Ici 40&nbsp;%</h3>
+        <p class="product-sub">Peaux sèches — 90g</p>
+        <p class="product-price">CHF 9.90</p>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-media">
+          <img src="assets/banner_right.jpg" alt="Savon au lait d'ânesse">
+          <div class="product-quickadd">Aperçu rapide</div>
+        </div>
+        <h3 class="product-title">Savon au Lait d'Ânesse</h3>
+        <p class="product-sub">Peaux sensibles — 100g</p>
+        <p class="product-price">CHF 10.90</p>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-media">
+          <span class="product-badge">Promotion</span>
+          <img src="assets/banner_full.jpg" alt="Coffret découverte">
+          <div class="product-quickadd">Aperçu rapide</div>
+        </div>
+        <h3 class="product-title">Coffret Découverte</h3>
+        <p class="product-sub">3 savons — édition limitée</p>
+        <p class="product-price"><span class="was">CHF 32.00</span> CHF 24.00</p>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-media">
+          <img src="assets/banner_left.jpg" alt="Shampoing solide Natur'Mel">
+          <div class="product-quickadd">Aperçu rapide</div>
+        </div>
+        <h3 class="product-title">Shampoing Natur'Mel</h3>
+        <p class="product-sub">Cheveux normaux — 75g</p>
+        <p class="product-price">CHF 13.50</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="section-tight">
+  <div class="wrap">
+    <div class="insta-head">
+      <span class="eyebrow">@ptitechipie_savonnerie</span>
+      <a href="https://www.instagram.com/ptitechipie_savonnerie/" class="btn btn-outline">Suivre</a>
+    </div>
+    <div class="insta-grid">
+      <a href="#"><img src="assets/banner_left.jpg" alt=""></a>
+      <a href="#"><img src="assets/banner_right.jpg" alt=""></a>
+      <a href="#"><img src="assets/banner_full.jpg" alt=""></a>
+      <a href="#"><img src="assets/banner_right.jpg" alt=""></a>
+      <a href="#"><img src="assets/banner_left.jpg" alt=""></a>
+      <a href="#"><img src="assets/banner_full.jpg" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER STRIP ============ -->
+<section class="strip">
+  <div class="wrap">
+    <span class="eyebrow" style="color:rgba(255,255,255,.6)">Restons en contact</span>
+    <h2 style="margin-top:14px;">Recevez nos nouveautés et nos dates de marché.</h2>
+    <p>Un e-mail par mois, jamais plus. Sans huile de palme, sans spam.</p>
+    <form class="strip-form" onsubmit="return false;">
+      <input type="email" placeholder="votre@e-mail.ch" required>
+      <button type="submit">S'abonner</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="P'tite Chipie">
+        <p>Savons surgras suisses, saponifiés à froid dans notre atelier genevois depuis 2014.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/ptitechipie_savonnerie/" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.facebook.com/Ptite-Chipie-Les-savons-487684641408718/" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 8h2V4h-2a4 4 0 0 0-4 4v2H9v4h2v6h4v-6h2.5l.5-4H15V8z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#">Notre philosophie</a></li>
+          <li><a href="#">Points de vente</a></li>
+          <li><a href="#">Info &amp; actualités</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Horaires — lu-je sur demande</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="par ex. mia@bluewin.ch">
+          <button>S'abonner</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2014–2026 P'tite Chipie — Tous droits réservés</span>
+      <span>Fait main à Genève</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
